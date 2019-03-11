@@ -1,4 +1,4 @@
-<h1>Parallax responsivo e efeito transform</h1>
+<h1>Parallax responsivo e propriedade transform</h1>
 <p>O projeto consiste em uma ideia de site que apresenta uma empresa (ou o desenvolvimento de um projeto).</p>
 <br>
 <strong>CSS</strong>
