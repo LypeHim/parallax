@@ -1,0 +1,225 @@
+@charset "utf-8";
+body, header *{
+	margin:0;padding:0; text-align: center;}
+
+header, .parallax, footer{	
+	justify-content:center; align-items:center;	width:100%;}
+
+header, .container, .container .cards, .container .card, .parallax, footer{	
+	display:grid;}
+
+header{
+	background:url("img/4973.jpg");
+	height:100vh;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:bottom;
+	margin-bottom:100px;}
+
+header article h1, header article p, .paralax h1{
+	text-transform:uppercase;
+	margin:40px 0;}
+
+header article h1{
+	color:white;	
+	font-size:3rem;}
+
+header article p{
+	color:#464444;
+	text-shadow:5px 5px 15px white;	
+	font-weight:bold;
+	font-size:20px;}
+
+header article p a{
+	text-shadow:none;
+	text-transform:none;
+	text-decoration:none;
+	border:1px solid black;
+	background-color:#352F2F;
+	color:white;
+	padding:10px;
+	border-radius:5px;
+	font-weight:100;
+	font-size:1rem;
+	letter-spacing:1px;}
+
+header article p a:hover{background-color:black;}
+
+.container{
+	width:100%;
+	margin-bottom:100px}
+
+.container .destaque, .container .cards, .parallax article{margin:auto;}
+
+.container .destaque{
+	width:90%;
+	margin-bottom:100px;}
+
+.container .cards{
+	grid-template-columns:1fr 1fr 1fr;}
+
+.container .card{
+	border:1px solid black;
+	max-width:348px;
+	border-radius:5px;
+	margin:0 30px;}
+
+.card .img img{
+	width:100%;
+	height:348px;}
+
+.parallax{	
+	background:url("img/earth-11595_1920.jpg");
+	height:100vh;
+	background-size:cover;
+	background-attachment:fixed;
+	color:white;}
+
+.parallax article{
+	width:80%;}
+
+.parallax h1{
+	font-size:3rem;}
+
+.parallax p{
+	font-weight:bold;
+	font-size:20px;}
+
+footer{
+	background-color:black;
+	color:white;
+	position: relative;}
+
+footer .head{
+	height: 25vh;
+	margin: 50px;
+}
+
+footer .body{
+	height: 75vh;
+	margin: 100px 0 30px;
+}
+
+ ul{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	height: 150px;
+}
+ul li{
+	list-style: none;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: #000;
+	transform: rotate(45deg);
+	transition: .5s;
+	margin: -100px;
+	overflow: hidden;
+	opacity: .5;
+}
+ul li:hover{
+	opacity: 1;
+}
+
+ul li.item1{
+	top:0;
+	left:0;
+}
+ul li.item2{
+	bottom:0;
+	left:25%;
+}
+ul li.item3{
+	top:0;
+	left:50%;
+}
+ul li.item4{
+	bottom:0;
+	left:75%;
+}
+
+ul li.item5{
+	top:0;
+	left:100%;
+}
+
+ul li .bg{
+	width: 100%;
+	height: 100%;
+	transform: rotate(-45deg) scale(1.42);
+}
+
+ul li.item1 .bg{
+	background: url("img/pexels-photo-220453.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+ul li.item2 .bg{
+	background: url("img/pexels-photo-774909.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+ul li.item3 .bg{
+	background: url("img/pexels-photo-1222271.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+ul li.item4 .bg{
+	background: url("img/pexels-photo-1239288.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+ul li.item5 .bg{
+	background: url("img/pexels-photo-769772.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+@media(max-width:900px){
+	.container .cards{
+		grid-template-columns:1fr;}	
+	.container .card{
+		margin:15px 0;}		
+	.destaque h1, .destaque p, footer p{
+		max-width:60vh;}
+	/*
+	footer{
+		height:100vh;
+	}
+	
+	footer .body{
+		
+	}
+	
+	ul {
+		height: 1000px;
+	}
+	ul li{
+	}
+	
+	ul li.item1{
+		top:0;
+		left:0;
+	}
+	ul li.item2{
+		top:25%;
+	}
+	ul li.item3{
+		top:50%;
+	}
+	ul li.item4{
+		top:75%;
+	}
+
+	ul li.item5{
+		top:100%;
+	}*/
+}
