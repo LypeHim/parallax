@@ -23,4 +23,5 @@
 
 <br>
 <strong>Ambiente de visualização:</strong>
-<p>Caso tenha interesse em ver o site pronto e hospedado, acesse: environment > View deployment, ou clique no link junto a descrição do projeto</p>
+<p>Caso tenha interesse em ver o site pronto e hospedado, acesse o link junto a descrição do projeto</p>
+
